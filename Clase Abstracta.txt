@@ -1,0 +1,5 @@
+¿Qué es una clase abstracta?
+Una clase abstracta en Java es una clase que no se puede instanciar directamente, es decir, no podemos crear objetos 
+de ella. Su propósito principal es servir como plantilla o base para que otras clases hereden sus atributos y métodos.
+Se define con la palabra clave abstract.
+Las clases abstractas son muy útiles cuando trabajamos en proyectos donde varias clases tienen características comunes, pero también presentan diferencias específicas
