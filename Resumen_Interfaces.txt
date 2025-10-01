@@ -1,0 +1,41 @@
+Resumen: Interfaces en Java
+
+1.  ¿Qué es una interfaz? Una interfaz es un contrato que define un
+    conjunto de métodos sin implementar. Las clases que la implementan
+    se comprometen a definir esos métodos.
+
+2.  Declaración public interface Enviable { void enviar(String destino);
+    }
+
+3.  Implementación public class Email implements Enviable { @Override
+    public void enviar(String destino) { System.out.println(“Enviando
+    email a” + destino); } }
+
+4.  Características clave
+
+-   No contienen implementación (salvo métodos default o static desde
+    Java 8).
+-   Una clase puede implementar varias interfaces (herencia múltiple de
+    tipo).
+-   Fomentan el polimorfismo y el desacoplamiento.
+
+5.  Métodos default y estáticos (Java 8+)
+
+-   default: permiten añadir implementación por defecto.
+-   static: se llaman desde la interfaz, no desde instancias.
+
+6.  Interfaces funcionales
+
+-   Tienen un único método abstracto (SAM).
+-   Se usan con expresiones lambda.
+
+Ejemplo: @FunctionalInterface interface Operacion { int aplicar(int a,
+int b); }
+
+Operacion suma = (a,b) -> a+b;
+
+7.  Uso práctico Se usan para:
+
+-   Definir capacidades (ej. Comparable, Runnable).
+-   Abstraer dependencias y facilitar pruebas.
+-   Escribir código flexible y mantenible.
