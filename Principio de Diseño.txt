@@ -1,0 +1,41 @@
+Programación Orientada a Objetos – Semana 08, Sesión 2
+Tema: Principio de diseño "Program to an Interface, not an Implementation"
+
+Conocimientos previos:
+- Diferencia entre interfaz y clase abstracta en Java.
+- Experiencia previa con el principio “Program to an Interface”.
+
+Logro de aprendizaje:
+- Aplicar el principio para escribir código más flexible y extensible en Java.
+
+Utilidad:
+- Mejora la flexibilidad del código en proyectos de software.
+- Facilita la incorporación de nuevas características y cambios sin alterar el código existente.
+- Aumenta la facilidad de pruebas y mantenimiento.
+
+Introducción:
+- El principio indica que se debe programar contra interfaces o abstracciones, no contra implementaciones concretas.
+- Promueve flexibilidad, extensibilidad y desacoplamiento en la programación orientada a objetos.
+
+Aplicaciones en Java:
+1. Definir interfaces:
+   - Primero se describen métodos y comportamientos en interfaces.
+   - Las clases concretas implementan estas interfaces.
+
+2. Usar interfaces como tipos:
+   - Variables y parámetros deben declararse como interfaces, no como clases concretas.
+   - Permite intercambiar implementaciones fácilmente.
+
+3. Inyección de dependencias:
+   - Implementaciones concretas se pasan a través de constructores o métodos.
+   - Facilita pruebas unitarias y sustitución de componentes.
+
+Resumen final:
+- "Program to an Interface" significa escribir código basado en interfaces y abstracciones.
+- Beneficios: código flexible, extensible, modular y fácil de mantener.
+- Cambios en las implementaciones no afectan la lógica principal del programa.
+
+Cierre:
+- Simplifica la incorporación de nuevas funcionalidades.
+- Aporta modularidad y mantenibilidad.
+- Favorece pruebas unitarias efectivas.
