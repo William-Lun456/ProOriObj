@@ -1,0 +1,51 @@
+Una clase abstracta es una clase que no puede instanciarse directamente (no se puede crear un objeto de ella) y que sirve como modelo o base para otras clases.
+Características:
+Se declara con la palabra clave abstract.
+
+abstract class Animal {
+    abstract void hacerSonido(); // método abstracto (sin cuerpo)
+    void dormir() { System.out.println("Zzz"); } // método normal
+}
+
+
+Puede contener:
+Métodos abstractos (sin cuerpo, deben implementarse en las subclases).
+
+Métodos concretos (con cuerpo, comportamiento común).
+
+Atributos (variables).
+
+Constructores (aunque no se pueden usar para crear objetos directamente).
+
+Uso:
+
+Se utiliza cuando varias clases comparten una estructura y comportamiento común, pero cada una debe implementar algunos métodos a su manera.
+
+
+Interfaces
+Definición:
+
+Una interfaz es un contrato que define un conjunto de métodos que una clase debe implementar.
+No tiene implementación (en versiones antiguas de Java) y sirve para garantizar comportamientos comunes entre clases no relacionadas.
+Características:
+Se declara con interface.
+
+interface Volador {
+    void volar(); // todos los métodos son públicos y abstractos por defecto
+}
+
+
+No puede tener atributos de instancia (solo constantes).
+
+Una clase puede implementar varias interfaces (soporta herencia múltiple de tipo):
+
+class Pajaro implements Volador {
+    public void volar() { System.out.println("El pájaro vuela"); }
+}
+
+
+Desde Java 8, pueden tener:
+
+Métodos default (con implementación).
+
+Métodos estáticos.
