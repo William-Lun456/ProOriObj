@@ -1,0 +1,76 @@
+Program to an Interface (Java)
+
+Idea central
+
+“Program to an interface, not an implementation”: escribe código que dependa de **abstracciones** (interfaces) en lugar de clases concretas para ganar **flexibilidad, extensibilidad y facilidad de pruebas**.
+ Objetivo de aprendizaje
+
+Al finalizar, podrás **aplicar el principio** en Java para estructurar componentes desacoplados, intercambiables y testeables.
+ ¿Por qué importa?
+
+Flexibilidad: puedes cambiar implementaciones sin tocar el código cliente.
+Extensibilidad:agregar nuevas variantes (nuevos adaptadores/estrategias) sin modificar consumidores.
+Mantenibilidad:menos dependencias rígidas → cambios locales.
+Testabilidad:mocks/stubs fáciles porque dependes de interfaces.
+
+
+Cómo aplicarlo en Java
+
+1. Define interfaces que expresen comportamientos esperados.
+
+   interface PaymentService { void pay(Order o); }`
+2. Usa interfaces como tipos en campos, parámetros y retornos.
+
+   class Checkout { private final PaymentService ps; … }`
+3. Inyección de dependencias (DI)**: pasa la implementación desde fuera (constructor/setter/framework) en lugar de instanciarla dentro.
+
+   new Checkout(new StripePaymentService())`
+4. Cumple LSP y Open/Closed**: nuevas implementaciones deben respetar el contrato; extiende sin modificar código existente.
+
+Mini‑ejemplo
+
+java
+interface Notifier { void send(String msg); }
+class EmailNotifier implements Notifier { public void send(String m){ /*…*/ } }
+class SmsNotifier implements Notifier { public void send(String m){ /*…*/ } }
+
+class AlertService {
+  private final Notifier notifier; // Programo contra la interfaz
+  AlertService(Notifier n){ this.notifier = n; }
+  void alert(String msg){ notifier.send(msg); }
+}
+// En tiempo de configuración
+auto alert = new AlertService(new EmailNotifier());
+// Cambiar a SMS no requiere tocar AlertService
+```
+Buenas prácticas
+
+Nombra interfaces por rol(`Repository`, `Service`, `Clock`).
+Interfaces delgadas (Single Responsibility).
+Contratos claros(Javadoc, invariantes, excepciones).
+Evita fugas de implementación en firmas públicas.
+Pruebas por contrato: un mismo suite de tests para múltiples implementaciones.
+
+Antipatrones comunes
+
+* Instanciar concreciones dentro de la lógica de negocio (`new` por todas partes).
+* Interfaces “god” demasiado amplias.
+* Crear interfaces sin necesidad (cuando no habrá sustitución razonable).
+
+
+Relación con otros conceptos
+
+*Polimorfismo: el cliente opera sobre la interfaz; la implementación concreta se decide en runtime/config.
+*DI/IoC: frameworks como Spring facilitan el cableado de implementaciones.
+*Patrones: Strategy, Adapter, Bridge, Factory abstraen y desacoplan.
+
+Preguntas guía (para cierre)
+
+* ¿Qué parte de tu proyecto se beneficiaría más si dependiera de una interfaz?
+* ¿Qué nueva funcionalidad podrías añadir como **nueva implementación** sin tocar el cliente?
+* ¿Cómo cambiarían tus pruebas unitarias si pudieras **mockear** fácilmente las dependencias?
+
+Tareas sugeridas
+
+* Refactoriza un servicio para depender de una interfaz y cablea la implementación vía DI.
+* Escribe tests que validen el **contrato** de la interfaz y ejecútalos sobre 2 implementaciones.
