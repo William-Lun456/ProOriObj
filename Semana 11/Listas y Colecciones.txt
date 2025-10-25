@@ -1,0 +1,24 @@
+En Java, una colección es una estructura que permite almacenar y manipular grupos de datos 
+(como números, textos u objetos). Las colecciones sirven para agrupar información relacionada, evitando tener 
+que crear múltiples variables sueltas.
+
+Por ejemplo, en lugar de tener varias variables para diferentes nombres, una colección puede almacenar 
+todos esos nombres dentro de una misma lista.
+
+Listas en Java
+
+Una lista es un tipo de colección ordenada, donde los elementos tienen una posición o índice, y pueden repetirse.
+La implementación más común de una lista en Java es ArrayList, aunque existen otras como LinkedList, que se 
+usan según las necesidades del programa.
+
+Las listas se usan para:
+-Agregar nuevos datos fácilmente.
+-Acceder a elementos por su posición.
+-Eliminar elementos cuando ya no se necesitan.
+-Recorrer todos los elementos de manera ordenada.
+
+Colecciones de objetos
+
+Además de almacenar datos simples, las listas pueden contener objetos personalizados.
+Por ejemplo, puedes crear una clase llamada Persona con atributos como nombre, edad o dirección, y luego guardar 
+varias instancias de esa clase dentro de una lista.
