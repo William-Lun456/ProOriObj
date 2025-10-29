@@ -1,0 +1,27 @@
+Clases Genéricas en Java
+
+Las clases genéricas son un mecanismo que permite crear clases, interfaces y métodos capaces de 
+trabajar con diferentes tipos de datos sin tener que duplicar código. En lugar de definir una versión 
+específica de una clase para cada tipo de dato, se define una sola estructura flexible y reutilizable.
+
+El uso de clases genéricas en Java:
+
+-Mejora la adaptabilidad del código a diferentes situaciones.
+
+-Permite un mejor manejo eficaz y seguro de los tipos de datos.
+
+-Reduce la redundancia, ya que no es necesario escribir código repetido para cada tipo.
+
+-Favorece el mantenimiento y legibilidad del software.
+
+Las clases genéricas se utilizan frecuentemente en:
+
+Colecciones (como ArrayList, HashMap, etc.).
+
+Algoritmos que deben procesar distintos tipos de datos.
+
+Contenedores y estructuras de datos personalizadas.
+
+Conclusión
+
+Las clases genéricas simplifican el desarrollo en Java al permitir la creación de código más modular, flexible y seguro. Son una herramienta esencial en la programacion, ya que equilibra la reutilización de código con la seguridad de tipos durante la compilación.
