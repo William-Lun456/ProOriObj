@@ -1,0 +1,11 @@
+Expresiones Lambda
+¿Qué es una expresión lambda en Java y para qué se utiliza?
+Forma de escribir funciones que puedes pasar como parámetros a métodos , no es necesario escribir toda la 
+estructura de un método, conocidas como funciones anónimas implementando métodos sin necesidad de una clase.
+
+¿Cuál es la sintaxis básica de una expresión lambda en Java?
+Es necesario implementar interfaz funcionales con un solo método abstracto que lo implementan y puedes crearlas tu tmb con @FunctionalInterface que con lambda implementas ese método de manera concisa 
+(Parametro){Sentecias}, 
+Con mas de un parameto Para1,Para2Sentencia
+Con mas de una sentencia Para--> Sen1,Sen2
+
