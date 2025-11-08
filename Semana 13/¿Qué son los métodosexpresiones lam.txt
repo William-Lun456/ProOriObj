@@ -1,0 +1,26 @@
+¿Qué son los métodos/expresiones lambda en Java?
+
+-Son una característica introducida en Java 8.
+-Permiten tratar funciones como si fueran objetos.
+
+Con ellas puedes:
+-Pasar una función como parámetro a un método.
+-Devolver una función desde un método.
+-Guardar una función en una variable.
+
+Relación con las interfaces funcionales:
+Una interfaz funcional es una interfaz que tiene solo un método abstracto.
+Las expresiones lambda se usan para implementar ese único método de forma rápida y concisa, 
+sin necesidad de crear clases anónimas largas.
+Así, en lugar de escribir mucha estructura de clase, se define directamente la operación que se quiere realizar.
+
+Uso con objetos:
+-Se crean objetos que representan operaciones (por ejemplo, operaciones matemáticas o acciones específicas).
+Estos objetos se pueden:
+-Pasar a otros métodos.
+-Usar en distintas clases.
+-Reutilizar para diferentes tareas.
+Esto hace que el código sea:
+-Más legible.
+-Más conciso.
+-Más fácil de mantener.
