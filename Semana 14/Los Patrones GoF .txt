@@ -1,0 +1,11 @@
+Los Patrones GoF son soluciones probadas a problemas comunes de diseño de software orientado a objetos. Buscan mejorar la modularidad, flexibilidad y mantenibilidad del código.
+
+Por qué importan:
+-Evitan “reinventar la rueda”.
+-Hacen que el código sea más fácil de reutilizar, extender y mantener.
+-Mejoran la comunicación entre desarrolladores porque todos comparten un lenguaje común (“usa un Singleton”, “esto es un Observer”, etc.).
+
+Categorías principales:
+-Patrones de Creación: se centran en cómo crear objetos de forma flexible (por ejemplo, Singleton, Factory Method, Abstract Factory).
+-Patrones de Estructura: se enfocan en cómo organizar y relacionar clases y objetos (por ejemplo, Adapter, Decorator, Composite, Proxy, Bridge, Flyweight).
+-Patrones de Comportamiento: describen cómo interactúan y se comunican los objetos (por ejemplo, Observer, Strategy, Command, State, Chain of Responsibility, Interpreter, Visitor).
