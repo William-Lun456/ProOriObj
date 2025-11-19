@@ -1,0 +1,73 @@
+Patrones de Diseño GoF 
+
+1) PATRONES CREACIONALES
+
+Se enfocan en cómo se CREAN los objetos.
+
+La idea principal es ocultar los detalles de creación y darte más flexibilidad para cambiar:
+- Qué objetos se crean.
+- Cómo se configuran.
+- Cómo se relacionan.
+
+Te ayudan a:
+- Evitar constructores gigantes llenos de parámetros.
+- Cambiar fácilmente el “tipo” de objetos que usas (por ejemplo, de objetos para escritorio a objetos para web).
+- Reutilizar lógica de construcción en lugar de copiar y pegar.
+
+Patrones creacionales :
+- Singleton
+- Factory Method
+- Abstract Factory
+- Builder
+- Prototype
+
+
+2) PATRONES ESTRUCTURALES
+Se centran en cómo se ORGANIZAN y COMBINAN clases y objetos para formar estructuras más grandes y flexibles.
+
+No cambian qué hace cada objeto, sino cómo se conectan entre sí.
+
+Te ayudan a:
+- Envolver objetos para darles más funcionalidad sin modificarlos (decorar).
+- Hacer que cosas incompatibles trabajen juntas (adaptar).
+- Simplificar el acceso a sistemas complejos (fachada).
+- Representar jerarquías tipo árbol (composite).
+
+Patrones estructurales :
+- Adapter
+- Bridge
+- Composite
+- Decorator
+- Facade
+- Flyweight
+- Proxy
+
+
+3) PATRONES COMPORTAMENTALES
+Se enfocan en cómo los objetos se COMUNICAN, COLABORAN y se REPARTEN RESPONSABILIDADES.
+
+No se trata de estructura, sino de:
+- Flujo de mensajes.
+- Decisiones.
+- Algoritmos.
+- Responsabilidades.
+
+Te ayudan a:
+- Definir quién hace qué y cuándo.
+- Cambiar algoritmos sin romper el código que los usa (Strategy).
+- Notificar automáticamente a varios objetos cuando algo cambia (Observer).
+- Encapsular acciones para poder deshacer, registrar o encadenar (Command).
+- Manejar estados, reglas, cadenas de validaciones, etc.
+
+Patrones comportamentales :
+- Chain of Responsibility
+- Command
+- Interpreter
+- Iterator
+- Mediator
+- Memento
+- Observer
+- State
+- Strategy
+- Template Method
+- Visitor
