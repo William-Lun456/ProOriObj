@@ -1,0 +1,22 @@
+¿Qué es la serialización?
+
+Es básicamente convertir un objeto en un formato que pueda guardarse en un archivo o enviarse a otro lugar.
+Imagina que tienes un objeto “Persona” con nombre, edad, etc.
+La serialización lo transforma en texto o bytes para que lo puedas:
+-Guardar en un archivo
+-Enviar por internet
+-Recuperar después
+Cuando lo quieres volver a usar, haces lo contrario: deserialización, que es “revivir” el objeto tal como estaba antes.
+¿Y por qué usar XML?
+XML es un formato de texto estructurado, fácil de leer tanto para humanos como para máquinas.
+Al serializar en XML obtienes algo así:
+<Persona>
+   <nombre>Ana</nombre>
+   <edad>20</edad>
+</Persona>
+Esto sirve cuando:
+-Quieres guardar datos de manera permanente
+-Quieres compartir información entre diferentes aplicaciones
+-Necesitas un formato estándar y fácil de interpretar
+¿Qué es una clase persistente?
+Es una clase cuyos objetos pueden guardarse y recuperarse de un archivo o base de datos
